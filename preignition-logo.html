@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`preignition-logo`
+responsive logo for preignition
+
+@demo demo/index.html
+-->
+
+<dom-module id="preignition-logo">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'preignition-logo',
+
+      properties: {
+        prop1: {
+          type: String,
+          value: 'preignition-logo',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
