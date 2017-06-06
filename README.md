@@ -1,21 +1,21 @@
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/polymerEl/preignition-logo)
+
 # \<preignition-logo\>
 
-responsive logo for preignition
+responsive logo and animated logo for preignition
 
-## Install the Polymer-CLI
+Example Usage:
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
-
-## Viewing Your Element
-
+<!--
 ```
-$ polymer serve
+<custom-element-demo>
+  <template>
+    <link rel="import" href="preignition-logo.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
 ```
-
-## Running Tests
-
-```
-$ polymer test
-```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+-->
+```html
+<preignition-logo state="square" ></preignition-logo>
+<preignition-logo state="oneline" ></preignition-logo>
