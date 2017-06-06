@@ -4,8 +4,22 @@
   "main": "preignition-logo.html",
   "license": "MIT",
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.9.0"
+    "polymer": "Polymer/polymer#^1.9.0",
+    "d3-bundle-element": "PolymerEl/d3-bundle-element#^1.0.0"
   },
+  "authors": [
+    "christophe-g <christophe.geiser@gmail.com>"
+  ],
+   "keywords": [
+    "d3.js",
+    "polymer",
+    "SVG",
+    "webcomponent",
+    "webcomponents",
+    "d3js",
+    "logo"
+  ],
+  "homepage": "https://github.com/PolymerEl/preignition-logo",
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
@@ -14,7 +28,6 @@
     "paper-inbox": "PolymerElements/paper-inbox#^1.0.0",
     "paper-checkbox": "PolymerElements/paper-checkbox#^1.0.0",
     "paper-radio-group": "PolymerElements/paper-radio-group#^1.0.0",
-    "paper-radio-button": "PolymerElements/paper-radio-button#^1.0.0",
-    "d3-bundle-element": "PolymerEl/d3-bundle-element#^1.0.0"
+    "paper-radio-button": "PolymerElements/paper-radio-button#^1.0.0"
   }
 }
