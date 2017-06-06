@@ -1,28 +1,58 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>preignition-logo demo</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>preignition-logo demo</title>
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../../paper-radio-group/paper-radio-group.html">
+  <link rel="import" href="../../paper-radio-button/paper-radio-button.html">
+  <link rel="import" href="../../paper-input/paper-input.html">
+  <link rel="import" href="../../paper-checkbox/paper-checkbox.html">
+  <link rel="import" href="../preignition-logo.html">
+  <style is="custom-style" include="demo-pages-shared-styles">
+  .centered {
+    min-width: 600px;
+    min-height: 600px;
+  }
+  preignition-logo {
+    /*background: red;*/
+     --flame-color: #80CBC4;
+  }
 
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  </style>
+</head>
 
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../preignition-logo.html">
-
-    <style is="custom-style" include="demo-pages-shared-styles">
-    </style>
-  </head>
-  <body>
-    <div class="vertical-section-container centered">
-      <h3>Basic preignition-logo demo</h3>
-      <demo-snippet>
-        <template>
-          <preignition-logo></preignition-logo>
+<body>
+  <div class="vertical-section-container centered">
+    <h3>Basic preignition-logo demo</h3>
+    <demo-snippet>
+      <template>
+        <template is="dom-bind" id="app">
+          <paper-radio-group selected="{{state}}">
+            <paper-radio-button name="square">square</paper-radio-button>
+            <paper-radio-button name="oneline">oneline</paper-radio-button>
+          </paper-radio-group>
+          <paper-input label="left text" value="{{left}}"></paper-input>
+          <paper-input label="right text" value="{{right}}"></paper-input>
+          <p>is small <paper-checkbox checked="{{isSmall}}"></paper-checkbox></p>
+          <paper-input label="animation duration" type="number" min="0" max="8000" value="{{duration}}"></paper-input>
+          <preignition-logo is-small="[[isSmall]]" state="{{state}}" duration="[[duration]]" text-left="[[left]]" text-right="[[right]]"></preignition-logo>
         </template>
-      </demo-snippet>
-    </div>
-  </body>
+      </template>
+    </demo-snippet>
+  </div>
+</body>
+<script>
+window.addEventListener('WebComponentsReady', function() {
+  app.left = 'investment';
+  app.right = 'readiness';
+  app.duration = 400;
+
+
+});
+</script>
 </html>
