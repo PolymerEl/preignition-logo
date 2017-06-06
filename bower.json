@@ -2,6 +2,7 @@
   "name": "preignition-logo",
   "description": "responsive logo for preignition",
   "main": "preignition-logo.html",
+  "license": "MIT",
   "dependencies": {
     "polymer": "Polymer/polymer#^1.9.0"
   },
