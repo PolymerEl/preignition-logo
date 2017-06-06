@@ -18,4 +18,3 @@ Example Usage:
 -->
 ```html
 <preignition-logo state="square" ></preignition-logo>
-<preignition-logo state="oneline" ></preignition-logo>
