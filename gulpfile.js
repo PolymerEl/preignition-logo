@@ -6,6 +6,7 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var svgmin = require('gulp-svgmin');
 var svg2png = require('gulp-svg2png');
+var mobileIcons = require('gulp-mobile-icons');
 // var imageResize = require('gulp-image-resize');
 
 gulp.task('svg', function() {
@@ -37,16 +38,23 @@ var imageResizeTask = function(size) {
         .pipe(svg2png({
           width : size
         }))
-        .pipe(rename(function (path) { path.basename += ('_' + size); }))
+        .pipe(rename(function (path) { path.basename += ('-' + size); }))
         .pipe(gulp.dest('img'));
       };
 // });
 
 //Image Resize
 gulp.task('resize', function() {
-  return [10, 32, 72, 96, 144, 152, 192, 384, 512, 100, 200, 400, 600, 1000].map(function(s) {
+  return [10, 32, 72, 96, 128,144, 152, 192, 384, 512, 100, 200, 400, 600, 1000].map(function(s) {
     return imageResizeTask(s);
   });
+});
+
+ 
+gulp.task('mobile', [], function() {
+    gulp.src('svg/logo-flame.svg')
+        .pipe(mobileIcons())
+        .pipe(gulp.dest('img'));
 });
  
 // gulp.task('resize', function () {
