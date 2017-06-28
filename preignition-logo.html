@@ -13,6 +13,8 @@ responsive logo for preignition
       display: block;
       --flame-color: var(--accent-color, #80CBC4);
       --circle-color: #37474F;
+      --logo-font-size: 50px;
+      --logo-letter-spacing: -1.5px;
     }
     
     .hide-small {
@@ -54,8 +56,8 @@ responsive logo for preignition
       font-style: normal;
       font-variant: normal;
       font-weight: 300;
-      font-size: 43px;
-      letter-spacing: -1.5px;
+      font-size: var(--logo-font-size);
+      letter-spacing: var(--logo-letter-spacing);
     }
 
     svg {
@@ -121,7 +123,7 @@ responsive logo for preignition
        */
       textLeft: {
         type: String,
-        value: 'investment',
+        value: 'enabling',
         observer: 'observeTextLeft'
       },
 
@@ -130,7 +132,7 @@ responsive logo for preignition
        */
       textRight: {
         type: String,
-        value: 'readiness',
+        value: 'growth',
         observer: 'observeTextRight'
       },
 

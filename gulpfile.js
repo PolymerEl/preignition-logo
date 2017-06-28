@@ -56,6 +56,8 @@ gulp.task('mobile', [], function() {
         .pipe(mobileIcons())
         .pipe(gulp.dest('img'));
 });
+
+gulp.task('default', ['svg', 'resize', 'mobile']);
  
 // gulp.task('resize', function () {
 //   return gulp.src('svgmin/**.svg')

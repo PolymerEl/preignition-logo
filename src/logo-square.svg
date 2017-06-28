@@ -28,7 +28,7 @@
       font-style: normal;
       font-variant: normal;
       font-weight: 300;
-      font-size: 43px;
+      font-size: 50px;
       letter-spacing: -1.5px;
     }
   </style>
@@ -60,8 +60,8 @@
         <path d="M724.935 513.14v-73.828h5.273l.914 9.422c9.422 -6.28 18.657 -9.422 27.703 -9.422 17.953 0 26.93 7.758 26.93 23.273v50.555h-7.383v-50.765c0 -10.97 -6.633 -16.454 -19.898 -16.454 -8.86 .002 -17.578 3.12 -26.156 9.353v57.867h-7.383" class=""></path>
       </g>
       <g class="logo-font hide-small">
-        <text id="textLeft" x="388" y="590" class="">investment</text>
-        <text id="textRight" text-anchor="end" x="786" y="590" class="">readiness</text>
+        <text id="textLeft" x="388" y="590" class="">enabling</text>
+        <text id="textRight" text-anchor="end" x="786" y="590" class="">growth</text>
       </g>
     </g>
   </g>
