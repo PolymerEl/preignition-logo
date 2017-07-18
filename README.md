@@ -18,3 +18,7 @@ Example Usage:
 -->
 ```html
 <preignition-logo state="square" ></preignition-logo>
+
+
+## Build image logo : 
+> `gulp `
